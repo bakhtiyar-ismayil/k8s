@@ -18,4 +18,12 @@ Kubernetes is a powerful open-source container orchestration platform that autom
 kubectl create deployment --image=nginx nginx --dry-run=client -o yaml --replicas=4 --port=8080 > nginx-deployment.yaml
 ```
 
+```
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+```
+
+```
+kubectl create configmap  webapp-config-map --from-literal=APP_COLOR=darkblue --from-literal=APP_OTHER=disregard
+```
+
 
