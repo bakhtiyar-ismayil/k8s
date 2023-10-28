@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Config
+
+
+clusters: 
+  - name: production
+    cluster: 
+    certificate-authority-data: "cat ca.cert | base64 
